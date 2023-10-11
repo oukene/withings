@@ -565,7 +565,7 @@ def get_attribute_unique_id(
     """Get a entity unique id for a user's attribute."""
     return f"withings_{description.measurement.value}_{user_id}"
 
-class BaseWithingsSensor(Entity):
+class BaseWithingsSensor(RestoreEntity):
     """Base class for withings sensors."""
 
     _attr_should_poll = False
@@ -647,10 +647,10 @@ class BaseWithingsSensor(Entity):
         self.async_write_ha_state()
 
     async def async_added_to_hass(self) -> None:
-        # old_state = await self.async_get_last_state()
-        # if _is_valid_state(old_state):
-        #     self._state_data = old_state.state
-        # await self.async_update_ha_state(True)
+        old_state = await self.async_get_last_state()
+        if _is_valid_state(old_state):
+            self._state_data = old_state.state
+        await self.async_update_ha_state(True)
 
         """Register update dispatcher."""
         _LOGGER.debug("call async_added_to_hass")
