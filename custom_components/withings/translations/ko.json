@@ -100,13 +100,13 @@
                 "name": "\ud638\ud761\u0020\uc7a5\uc560"
             },
             "sleep_heart_rate_average_bpm": {
-                "name": "\ud3c9\uade0\u0020\uc2ec\ubc15\uc218"
+                "name": "\uc2ec\ubc15\uc218\u0020\ud3c9\uade0"
             },
             "sleep_heart_rate_max_bpm": {
-                "name": "\ucd5c\ub300\u0020\uc2ec\ubc15\uc218"
+                "name": "\uc2ec\ubc15\uc218\u0020\ucd5c\ub300"
             },
             "sleep_heart_rate_min_bpm": {
-                "name": "\ucd5c\uc18c\u0020\uc2ec\ubc15\uc218"
+                "name": "\uc2ec\ubc15\uc218\u0020\ucd5c\uc18c"
             },
             "sleep_light_duration_seconds": {
                 "name": "\uc595\uc740\u0020\uc218\uba74\u0020\uc2dc\uac04"
