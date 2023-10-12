@@ -159,6 +159,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_DEEP_DURATION_SECONDS.value,
@@ -206,6 +207,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_HEART_RATE_MAX.value,
@@ -217,6 +219,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_HEART_RATE_MIN.value,
@@ -228,6 +231,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_LIGHT_DURATION_SECONDS.value,
@@ -262,6 +266,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_RESPIRATORY_RATE_MAX.value,
@@ -272,6 +277,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_RESPIRATORY_RATE_MIN.value,
@@ -282,6 +288,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_SCORE.value,
@@ -293,6 +300,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_SNORING.value,
@@ -313,6 +321,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_WAKEUP_COUNT.value,
@@ -324,6 +333,7 @@ SENSORS_SLEEP = [
         state_class=SensorStateClass.MEASUREMENT,
         entity_registry_enabled_default=False,
         update_type=UpdateType.POLL,
+        suggested_display_precision=0,
     ),
     WithingsSensorEntityDescription(
         key=Measurement.SLEEP_WAKEUP_DURATION_SECONDS.value,
@@ -448,3 +458,7 @@ class WithingsHealthSensor(BaseWithingsSensor, SensorEntity):
     def native_value(self) -> None | str | int | float:
         """Return the state of the entity."""
         return self._state_data
+
+    @property
+    def suggested_display_precision(self) -> int | None:
+        return self.entity_description.suggested_display_precision
