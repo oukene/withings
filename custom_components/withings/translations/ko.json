@@ -11,21 +11,21 @@
                 }
             },
             "pick_implementation": {
-                "title": "[%key:common::config_flow::title::oauth2_pick_implementation%]"
+                "title": "\uc778\uc99d\u0020\ubc29\ubc95\u0020\uc120\ud0dd\ud558\uae30"
             },
             "reauth_confirm": {
-                "title": "[%key:common::config_flow::title::reauth%]",
-                "description": "\u0057\u0069\u0074\u0068\u0069\u006e\u0067\u0073\u0020\ub370\uc774\ud130\ub97c\u0020\uacc4\uc18d\u0020\uc218\uc2e0\ud558\ub824\uba74\u0020 \"{profile}\" \ud504\ub85c\ud544\uc744\u0020\ub2e4\uc2dc\u0020\uc778\uc99d\ud574\uc57c\u0020\ud569\ub2c8\ub2e4\u002e"
+                "title": "\ud1b5\ud569\uad6c\uc131\uc694\uc18c\u0020\uc7ac\uc778\uc99d\ud558\uae30",
+                "description": "\u0057\u0069\u0074\u0068\u0069\u006e\u0067\u0073\u0020\ub370\uc774\ud130\ub97c\u0020\uacc4\uc18d\u0020\uc218\uc2e0\ud558\ub824\uba74 \"{profile}\" \ud504\ub85c\ud544\uc744\u0020\ub2e4\uc2dc\u0020\uc778\uc99d\ud574\uc57c\u0020\ud569\ub2c8\ub2e4\u002e"
             }
         },
         "error": {
-            "already_configured": "[%key:common::config_flow::abort::already_configured_account%]"
+            "already_configured": "\uacc4\uc815\uc774\u0020\uc774\ubbf8\u0020\uad6c\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
         },
         "abort": {
-            "authorize_url_timeout": "[%key:common::config_flow::abort::oauth2_authorize_url_timeout%]",
-            "missing_configuration": "[%key:common::config_flow::abort::oauth2_missing_configuration%]",
+            "authorize_url_timeout": "\uc778\uc99d\u0020\u0055\u0052\u004c\u0020\uc0dd\uc131\u0020\uc2dc\uac04\uc774\u0020\ucd08\uacfc\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e",
+            "missing_configuration": "\uad6c\uc131\uc694\uc18c\uac00\u0020\uad6c\uc131\ub418\uc9c0\u0020\uc54a\uc558\uc2b5\ub2c8\ub2e4\u002e\u0020\uc124\uba85\uc11c\ub97c\u0020\ucc38\uace0\ud574\uc8fc\uc138\uc694\u002e",
             "already_configured": "\ud504\ub85c\ud544\u0020\uad6c\uc131\uc774\u0020\uc5c5\ub370\uc774\ud2b8\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e",
-            "no_url_available": "[%key:common::config_flow::abort::oauth2_no_url_available%]"
+            "no_url_available": "\uc0ac\uc6a9\u0020\uac00\ub2a5\ud55c\u0020\u0055\u0052\u004c\uc774\u0020\uc5c6\uc2b5\ub2c8\ub2e4\u002e\u0020\uc774\u0020\uc624\ub958\uc5d0\u0020\ub300\ud55c\u0020\uc790\uc138\ud55c\u0020\ub0b4\uc6a9\uc740 [\ub3c4\uc6c0\ub9d0\u0020\uc139\uc158]({docs_url}) \uc744\u0028\ub97c\u0029\u0020\ucc38\uc870\ud574\uc8fc\uc138\uc694\u002e"
         },
         "create_entry": {
             "default": "\u0057\u0069\u0074\u0068\u0069\u006e\u0067\u0073\ub85c\u0020\uc131\uacf5\uc801\uc73c\ub85c\u0020\uc778\uc99d\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e"
@@ -151,6 +151,5 @@
                 "name": "\ubab8\ubb34\uac8c"
             }
         }
-
     }
 }
