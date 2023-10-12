@@ -64,6 +64,7 @@ DATA_UPDATED_SIGNAL = "withings_entity_state_updated"
 def _is_valid_state(state) -> bool:
     return state and state.state != STATE_UNKNOWN and state.state != STATE_UNAVAILABLE
 
+
 class UpdateType(StrEnum):
     """Data update type."""
 
@@ -294,7 +295,8 @@ class DataManager:
             pass
 
         self._cancel_subscription_update = (
-            self.subscription_update_coordinator.async_add_listener(empty_listener)
+            self.subscription_update_coordinator.async_add_listener(
+                empty_listener)
         )
 
     def async_stop_polling_webhook_subscriptions(self) -> None:
@@ -417,7 +419,8 @@ class DataManager:
             er.async_get(self._hass), self._api.config_entry.entry_id)
         for e in entities:
             _LOGGER.debug("entity id : " + str(e.entity_id))
-            er.async_get(self._hass).async_update_entity(e.entity_id, hidden_by=None)
+            er.async_get(self._hass).async_update_entity(
+                e.entity_id, hidden_by=None)
 
         _LOGGER.info("Updating all withings data")
         return {
@@ -565,6 +568,7 @@ def get_attribute_unique_id(
     """Get a entity unique id for a user's attribute."""
     return f"withings_{description.measurement.value}_{user_id}"
 
+
 class BaseWithingsSensor(RestoreEntity):
     """Base class for withings sensors."""
 
@@ -574,7 +578,7 @@ class BaseWithingsSensor(RestoreEntity):
     _attr_entity_registry_enabled_default = True
     _attr_entity_registry_visible_default = True
     _attr_force_update = True
-    #_attr_name = None
+    # _attr_name = None
 
     def __init__(
         self, hass, sensor_type, data_manager: DataManager, description: WithingsEntityDescription
@@ -591,9 +595,9 @@ class BaseWithingsSensor(RestoreEntity):
             description, data_manager.user_id
         )
         self._state_data: Any | None = None
-        
+
         _LOGGER.debug("__init__ : " + str(self.entity_description.name))
-        #er.async_get(hass).async_update_entity(self._attr_unique_id, hidden_by=None)
+        # er.async_get(hass).async_update_entity(self._attr_unique_id, hidden_by=None)
 
     @property
     def translation_key(self) -> str | None:
@@ -604,9 +608,9 @@ class BaseWithingsSensor(RestoreEntity):
     def device_info(self):
         """Information about this entity/device."""
         return {
-            "identifiers": {(DOMAIN, self._data_manager.user_id + self._sensor_type)},
+            "identifiers": {(DOMAIN, str(self._data_manager.user_id) + str(self._sensor_type))},
             # If desired, the name for the device could be different to the entity
-            "name": self._data_manager.profile + "_" + self._sensor_type,
+            "name": str(self._data_manager.profile) + "_" + str(self._sensor_type),
             "sw_version": const.VERSION,
             "model": DOMAIN,
             "manufacturer": DOMAIN
@@ -682,7 +686,8 @@ async def async_get_data_manager(
     if const.DATA_MANAGER not in config_entry_data:
         profile: str = config_entry.data[const.PROFILE]
 
-        _LOGGER.debug("Creating withings data manager for profile: %s", profile)
+        _LOGGER.debug(
+            "Creating withings data manager for profile: %s", profile)
         config_entry_data[const.DATA_MANAGER] = DataManager(
             hass,
             profile,

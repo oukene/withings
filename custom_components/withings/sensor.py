@@ -45,6 +45,7 @@ from .const import (
 import logging
 _LOGGER = logging.getLogger(__name__)
 
+
 @dataclass
 class WithingsSensorEntityDescription(
     SensorEntityDescription, WithingsEntityDescription
@@ -84,7 +85,6 @@ SENSORS_THERMO = [
         update_type=UpdateType.POLL,
     ),
 ]
-
 
 
 SENSORS_PRESSURE = [
@@ -435,7 +435,7 @@ async def async_setup_entry(
         entities.extend([WithingsHealthSensor(
             hass, "thermostat", data_manager, attribute) for attribute in SENSORS_THERMO])
 
-    #_LOGGER.debug("entities : " + str(entities))
+    # _LOGGER.debug("entities : " + str(entities))
     async_add_entities(entities, True)
 
 
@@ -448,7 +448,3 @@ class WithingsHealthSensor(BaseWithingsSensor, SensorEntity):
     def native_value(self) -> None | str | int | float:
         """Return the state of the entity."""
         return self._state_data
-    
-
-
-    
