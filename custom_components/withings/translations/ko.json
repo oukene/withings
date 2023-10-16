@@ -4,31 +4,31 @@
         "flow_title": "{profile}",
         "step": {
             "profile": {
-                "title": "\uc0ac\uc6a9\uc790\u0020\ud504\ub85c\ud544",
-                "description": "\uc774\u0020\ub370\uc774\ud130\uc5d0\u0020\ub300\ud55c\u0020\uace0\uc720\ud55c\u0020\ud504\ub85c\ud544\u0020\uc774\ub984\uc744\u0020\uc81c\uacf5\ud558\uc138\uc694\u002e\u0020\uc77c\ubc18\uc801\uc73c\ub85c\u0020\uc774\ub294\u0020\uc774\uc804\u0020\ub2e8\uacc4\uc5d0\uc11c\u0020\uc120\ud0dd\ud55c\u0020\ud504\ub85c\ud544\uc758\u0020\uc774\ub984\uc785\ub2c8\ub2e4\u002e",
+                "title": "\uc0ac\uc6a9\uc790 \ud504\ub85c\ud544",
+                "description": "\uc774 \ub370\uc774\ud130\uc5d0 \ub300\ud55c \uace0\uc720\ud55c \ud504\ub85c\ud544 \uc774\ub984\uc744 \uc81c\uacf5\ud558\uc138\uc694. \uc77c\ubc18\uc801\uc73c\ub85c \uc774\ub294 \uc774\uc804 \ub2e8\uacc4\uc5d0\uc11c \uc120\ud0dd\ud55c \ud504\ub85c\ud544\uc758 \uc774\ub984\uc785\ub2c8\ub2e4.",
                 "data": {
-                    "profile": "\ud504\ub85c\ud544\u0020\uc774\ub984"
+                    "profile": "\ud504\ub85c\ud544 \uc774\ub984"
                 }
             },
             "pick_implementation": {
-                "title": "\uc778\uc99d\u0020\ubc29\ubc95\u0020\uc120\ud0dd\ud558\uae30"
+                "title": "\uc778\uc99d \ubc29\ubc95 \uc120\ud0dd\ud558\uae30"
             },
             "reauth_confirm": {
-                "title": "\ud1b5\ud569\uad6c\uc131\uc694\uc18c\u0020\uc7ac\uc778\uc99d\ud558\uae30",
-                "description": "\u0057\u0069\u0074\u0068\u0069\u006e\u0067\u0073\u0020\ub370\uc774\ud130\ub97c\u0020\uacc4\uc18d\u0020\uc218\uc2e0\ud558\ub824\uba74 \"{profile}\" \ud504\ub85c\ud544\uc744\u0020\ub2e4\uc2dc\u0020\uc778\uc99d\ud574\uc57c\u0020\ud569\ub2c8\ub2e4\u002e"
+                "title": "\ud1b5\ud569\uad6c\uc131\uc694\uc18c \uc7ac\uc778\uc99d\ud558\uae30",
+                "description": "Withings \ub370\uc774\ud130\ub97c \uacc4\uc18d \uc218\uc2e0\ud558\ub824\uba74 \"{profile}\" \ud504\ub85c\ud544\uc744 \ub2e4\uc2dc \uc778\uc99d\ud574\uc57c \ud569\ub2c8\ub2e4."
             }
         },
         "error": {
-            "already_configured": "\uacc4\uc815\uc774\u0020\uc774\ubbf8\u0020\uad6c\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+            "already_configured": "\uacc4\uc815\uc774 \uc774\ubbf8 \uad6c\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
         },
         "abort": {
-            "authorize_url_timeout": "\uc778\uc99d\u0020\u0055\u0052\u004c\u0020\uc0dd\uc131\u0020\uc2dc\uac04\uc774\u0020\ucd08\uacfc\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e",
-            "missing_configuration": "\uad6c\uc131\uc694\uc18c\uac00\u0020\uad6c\uc131\ub418\uc9c0\u0020\uc54a\uc558\uc2b5\ub2c8\ub2e4\u002e\u0020\uc124\uba85\uc11c\ub97c\u0020\ucc38\uace0\ud574\uc8fc\uc138\uc694\u002e",
-            "already_configured": "\ud504\ub85c\ud544\u0020\uad6c\uc131\uc774\u0020\uc5c5\ub370\uc774\ud2b8\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e",
-            "no_url_available": "\uc0ac\uc6a9\u0020\uac00\ub2a5\ud55c\u0020\u0055\u0052\u004c\uc774\u0020\uc5c6\uc2b5\ub2c8\ub2e4\u002e\u0020\uc774\u0020\uc624\ub958\uc5d0\u0020\ub300\ud55c\u0020\uc790\uc138\ud55c\u0020\ub0b4\uc6a9\uc740 [\ub3c4\uc6c0\ub9d0\u0020\uc139\uc158]({docs_url}) \uc744\u0028\ub97c\u0029\u0020\ucc38\uc870\ud574\uc8fc\uc138\uc694\u002e"
+            "authorize_url_timeout": "\uc778\uc99d URL \uc0dd\uc131 \uc2dc\uac04\uc774 \ucd08\uacfc\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+            "missing_configuration": "\uad6c\uc131\uc694\uc18c\uac00 \uad6c\uc131\ub418\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4. \uc124\uba85\uc11c\ub97c \ucc38\uace0\ud574\uc8fc\uc138\uc694.",
+            "already_configured": "\ud504\ub85c\ud544 \uad6c\uc131\uc774 \uc5c5\ub370\uc774\ud2b8\ub418\uc5c8\uc2b5\ub2c8\ub2e4.",
+            "no_url_available": "\uc0ac\uc6a9 \uac00\ub2a5\ud55c URL\uc774 \uc5c6\uc2b5\ub2c8\ub2e4. \uc774 \uc624\ub958\uc5d0 \ub300\ud55c \uc790\uc138\ud55c \ub0b4\uc6a9\uc740 [\ub3c4\uc6c0\ub9d0 \uc139\uc158]({docs_url}) \uc744(\ub97c) \ucc38\uc870\ud574\uc8fc\uc138\uc694."
         },
         "create_entry": {
-            "default": "\u0057\u0069\u0074\u0068\u0069\u006e\u0067\u0073\ub85c\u0020\uc131\uacf5\uc801\uc73c\ub85c\u0020\uc778\uc99d\ub418\uc5c8\uc2b5\ub2c8\ub2e4\u002e"
+            "default": "Withings\ub85c \uc131\uacf5\uc801\uc73c\ub85c \uc778\uc99d\ub418\uc5c8\uc2b5\ub2c8\ub2e4."
         }
     },
     "options": {
@@ -36,10 +36,10 @@
             "init": {
                 "title": "Withings Options",
                 "data": {
-                    "body_measurement": "\uc2e0\uccb4\uce21\uc815\u0020\uad00\ub828\u0020\uc13c\uc11c\ub97c\u0020\ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
-                    "sleep_measurement": "\uc218\uba74\u0020\uad00\ub828\u0020\uc13c\uc11c\ub97c\u0020\ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
-                    "thermo_measurement": "\uccb4\uc628\u0020\uad00\ub828\u0020\uc13c\uc11c\ub97c\u0020\ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
-                    "pressure_measurement": "\ud608\uc555\u0020\uad00\ub828\u0020\uc13c\uc11c\ub97c\u0020\ud65c\uc131\ud654\ud569\ub2c8\ub2e4"
+                    "body_measurement": "\uc2e0\uccb4\uce21\uc815 \uad00\ub828 \uc13c\uc11c\ub97c \ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
+                    "sleep_measurement": "\uc218\uba74 \uad00\ub828 \uc13c\uc11c\ub97c \ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
+                    "thermo_measurement": "\uccb4\uc628 \uad00\ub828 \uc13c\uc11c\ub97c \ud65c\uc131\ud654\ud569\ub2c8\ub2e4",
+                    "pressure_measurement": "\ud608\uc555 \uad00\ub828 \uc13c\uc11c\ub97c \ud65c\uc131\ud654\ud569\ub2c8\ub2e4"
                 }
             }
         }
@@ -52,97 +52,97 @@
         },
         "sensor": {
             "spo2_pct": {
-                "name": "\ud608\uc911\u0020\uc0b0\uc18c\u0020\ud3ec\ud654\ub3c4"
+                "name": "\ud608\uc911 \uc0b0\uc18c \ud3ec\ud654\ub3c4"
             },
             "systolic_blood_pressure_mmhg": {
-                "name": "\uc218\ucd95\uae30\u0020\ud608\uc555"
+                "name": "\uc218\ucd95\uae30 \ud608\uc555"
             },
             "diastolic_blood_pressure_mmhg": {
-                "name": "\ud655\uc7a5\uae30\u0020\ud608\uc555"
+                "name": "\ud655\uc7a5\uae30 \ud608\uc555"
             },
             "sleep_deep_duration_seconds": {
-                "name": "\uae4a\uc740\uc218\uba74\u0020\uc2dc\uac04"
+                "name": "\uae4a\uc740\uc218\uba74 \uc2dc\uac04"
             },
             "body_temperature_c": {
                 "name": "\uccb4\uc628"
             },
             "bone_mass_kg": {
-                "name": "\ubf08\u0020\uc9c8\ub7c9"
+                "name": "\ubf08 \uc9c8\ub7c9"
             },
             "fat_free_mass_kg": {
-                "name": "\ubb34\uc9c0\ubc29\u0020\uc9c8\ub7c9"
+                "name": "\ubb34\uc9c0\ubc29 \uc9c8\ub7c9"
             },
             "fat_mass_kg": {
-                "name": "\uc9c0\ubc29\u0020\uc9c8\ub7c9"
+                "name": "\uc9c0\ubc29 \uc9c8\ub7c9"
             },
             "fat_ratio_pct": {
-                "name": "\uc9c0\ubc29\u0020\ube44\uc728"
+                "name": "\uc9c0\ubc29 \ube44\uc728"
             },
             "heart_pulse_bpm": {
-                "name": "\uc2ec\uc7a5\u0020\ubc15\ub3d9"
+                "name": "\uc2ec\uc7a5 \ubc15\ub3d9"
             },
             "height_m": {
                 "name": "\ud0a4"
             },
             "hydration": {
-                "name": "\uc218\ubd84\u0020\ub7c9"
+                "name": "\uc218\ubd84 \ub7c9"
             },
             "muscle_mass_kg": {
-                "name": "\uadfc\uc721\u0020\ub7c9"
+                "name": "\uadfc\uc721 \ub7c9"
             },
             "pulse_wave_velocity": {
-                "name": "\ub9e5\ud30c\u0020\uc18d\ub3c4"
+                "name": "\ub9e5\ud30c \uc18d\ub3c4"
             },
             "skin_temperature_c": {
-                "name": "\ud53c\ubd80\u0020\uc628\ub3c4"
+                "name": "\ud53c\ubd80 \uc628\ub3c4"
             },
             "sleep_breathing_disturbances_intensity": {
-                "name": "\ud638\ud761\u0020\uc7a5\uc560"
+                "name": "\ud638\ud761 \uc7a5\uc560"
             },
             "sleep_heart_rate_average_bpm": {
-                "name": "\uc2ec\ubc15\uc218\u0020\ud3c9\uade0"
+                "name": "\uc2ec\ubc15\uc218 \ud3c9\uade0"
             },
             "sleep_heart_rate_max_bpm": {
-                "name": "\uc2ec\ubc15\uc218\u0020\ucd5c\ub300"
+                "name": "\uc2ec\ubc15\uc218 \ucd5c\ub300"
             },
             "sleep_heart_rate_min_bpm": {
-                "name": "\uc2ec\ubc15\uc218\u0020\ucd5c\uc18c"
+                "name": "\uc2ec\ubc15\uc218 \ucd5c\uc18c"
             },
             "sleep_light_duration_seconds": {
-                "name": "\uc595\uc740\u0020\uc218\uba74\u0020\uc2dc\uac04"
+                "name": "\uc595\uc740 \uc218\uba74 \uc2dc\uac04"
             },
             "sleep_rem_duration_seconds": {
-                "name": "\ub818\uc218\uba74\u0020\uc2dc\uac04"
+                "name": "\ub818\uc218\uba74 \uc2dc\uac04"
             },
             "sleep_respiratory_average_bpm": {
-                "name": "\ud638\ud761\u0020\ud3c9\uade0"
+                "name": "\ud638\ud761 \ud3c9\uade0"
             },
             "sleep_respiratory_max_bpm": {
-                "name": "\ud638\ud761\u0020\ucd5c\ub300"
+                "name": "\ud638\ud761 \ucd5c\ub300"
             },
             "sleep_respiratory_min_bpm": {
-                "name": "\ud638\ud761\u0020\ucd5c\uc18c"
+                "name": "\ud638\ud761 \ucd5c\uc18c"
             },
             "sleep_score": {
-                "name": "\uc218\uba74\u0020\uc810\uc218"
+                "name": "\uc218\uba74 \uc810\uc218"
             },
             "sleep_snoring": {
-                "name": "\ucf54\uace8\uc774\u0020\uc2dc\uac04"
+                "name": "\ucf54\uace8\uc774 \uc2dc\uac04"
             },
             "sleep_snoring_eposode_count": {
-                "name": "\ucf54\uace8\uc774\u0020\ud69f\uc218"
+                "name": "\ucf54\uace8\uc774 \ud69f\uc218"
             },
             "sleep_tosleep_duration_seconds": {
-                "name": "\uc7a0\ub4e4\uae30\u0020\uae4c\uc9c0\uc758\u0020\uc2dc\uac04"
+                "name": "\uc7a0\ub4e4\uae30 \uae4c\uc9c0\uc758 \uc2dc\uac04"
             },
             "sleep_towakeup_duration_seconds": {
-                "name": "\uc77c\uc5b4\ub098\uae30\u0020\uae4c\uc9c0\uc758\u0020\uc2dc\uac04"
+                "name": "\uc77c\uc5b4\ub098\uae30 \uae4c\uc9c0\uc758 \uc2dc\uac04"
             },
             "sleep_wakeup_count": {
-                "name": "\uc218\uba74\u0020\uc911\u0020\uae6c\u0020\ud69f\uc218"
+                "name": "\uc218\uba74 \uc911 \uae6c \ud69f\uc218"
             },
             "sleep_wakeup_duration_seconds": {
-                "name": "\uc218\uba74\u0020\uc911\u0020\uae6c\u0020\uc2dc\uac04"
+                "name": "\uc218\uba74 \uc911 \uae6c \uc2dc\uac04"
             },
             "temperature_c": {
                 "name": "\uc628\ub3c4"
