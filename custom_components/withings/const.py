@@ -65,11 +65,3 @@ UOM_MMHG = "mmhg"
 
 #modify
 VERSION = "2023.10.3"
-DEFAULT_TITLE = "Withings_plus"
-DOMAIN = "withings_plus"
-LOG_NAMESPACE = "homeassistant.components.withings_plus"
-
-CONF_USE_BODY_MEASUREMENT = "body_measurement"
-CONF_USE_SLEEP_MEASUREMENT = "sleep_measurement"
-CONF_USE_THERMO_MEASUREMENT = "thermo_measurement"
-CONF_USE_PRESSURE_MEASUREMENT = "pressure_measurement"

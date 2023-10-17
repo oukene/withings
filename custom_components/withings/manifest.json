@@ -1,6 +1,6 @@
 {
-  "domain": "withings_plus",
-  "name": "withings_plus",
+  "domain": "withings",
+  "name": "withings",
   "after_dependencies": ["cloud"],
   "codeowners": ["@vangorra", "@joostlek"],
   "config_flow": true,
