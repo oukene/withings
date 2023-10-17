@@ -1,23 +1,20 @@
 """Constants used by the Withings component."""
 from enum import StrEnum
+import logging
 
-VERSION = "1.0.0"
-
+DEFAULT_TITLE = "Withings"
 CONF_PROFILES = "profiles"
 CONF_USE_WEBHOOK = "use_webhook"
-
-CONF_USE_BODY_MEASUREMENT = "body_measurement"
-CONF_USE_SLEEP_MEASUREMENT = "sleep_measurement"
-CONF_USE_THERMO_MEASUREMENT = "thermo_measurement"
-CONF_USE_PRESSURE_MEASUREMENT = "pressure_measurement"
 
 DATA_MANAGER = "data_manager"
 
 CONFIG = "config"
 DOMAIN = "withings"
-#LOG_NAMESPACE = "homeassistant.components.withings_sleep"
+LOG_NAMESPACE = "homeassistant.components.withings"
 PROFILE = "profile"
 PUSH_HANDLER = "push_handler"
+
+LOGGER = logging.getLogger(__package__)
 
 
 class Measurement(StrEnum):
@@ -64,3 +61,15 @@ UOM_BEATS_PER_MINUTE = "bpm"
 UOM_BREATHS_PER_MINUTE = "br/min"
 UOM_FREQUENCY = "times"
 UOM_MMHG = "mmhg"
+
+
+#modify
+VERSION = "2023.10.3"
+DEFAULT_TITLE = "Withings_plus"
+DOMAIN = "withings_plus"
+LOG_NAMESPACE = "homeassistant.components.withings_plus"
+
+CONF_USE_BODY_MEASUREMENT = "body_measurement"
+CONF_USE_SLEEP_MEASUREMENT = "sleep_measurement"
+CONF_USE_THERMO_MEASUREMENT = "thermo_measurement"
+CONF_USE_PRESSURE_MEASUREMENT = "pressure_measurement"

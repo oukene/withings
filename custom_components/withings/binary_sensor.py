@@ -10,18 +10,13 @@ from homeassistant.components.binary_sensor import (
     BinarySensorEntity,
     BinarySensorEntityDescription,
 )
-
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
-from .common import (
-    BaseWithingsSensor,
-    UpdateType,
-    WithingsEntityDescription,
-    async_get_data_manager,
-)
-from .const import Measurement, CONF_USE_SLEEP_MEASUREMENT
+from .const import DOMAIN, Measurement
+from .coordinator import WithingsDataUpdateCoordinator
+from .entity import WithingsEntity, WithingsEntityDescription
 
 
 @dataclass
@@ -37,9 +32,8 @@ BINARY_SENSORS = [
         key=Measurement.IN_BED.value,
         measurement=Measurement.IN_BED,
         measure_type=NotifyAppli.BED_IN,
-        name="In bed",
+        translation_key="in_bed",
         icon="mdi:bed",
-        update_type=UpdateType.WEBHOOK,
         device_class=BinarySensorDeviceClass.OCCUPANCY,
     ),
 ]
@@ -51,18 +45,16 @@ async def async_setup_entry(
     async_add_entities: AddEntitiesCallback,
 ) -> None:
     """Set up the sensor config entry."""
-    data_manager = await async_get_data_manager(hass, entry)
+    coordinator: WithingsDataUpdateCoordinator = hass.data[DOMAIN][entry.entry_id]
 
-    if entry.options.get(CONF_USE_SLEEP_MEASUREMENT, False):
-        entities = [
-            WithingsHealthBinarySensor(hass, "sleep", data_manager, attribute)
-            for attribute in BINARY_SENSORS
-        ]
-        async_add_entities(entities, True)
-    
+    entities = [
+        WithingsBinarySensor(coordinator, attribute) for attribute in BINARY_SENSORS
+    ]
+
+    async_add_entities(entities)
 
 
-class WithingsHealthBinarySensor(BaseWithingsSensor, BinarySensorEntity):
+class WithingsBinarySensor(WithingsEntity, BinarySensorEntity):
     """Implementation of a Withings sensor."""
 
     entity_description: WithingsBinarySensorEntityDescription
@@ -70,4 +62,4 @@ class WithingsHealthBinarySensor(BaseWithingsSensor, BinarySensorEntity):
     @property
     def is_on(self) -> bool | None:
         """Return true if the binary sensor is on."""
-        return self._state_data
+        return self.coordinator.in_bed
